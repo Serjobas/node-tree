@@ -6,9 +6,9 @@ export type BaseNodeType = {
 };
 
 export abstract class BaseNode {
-  public type: string = TYPE;
+  public type = TYPE;
 
-  protected child?: BaseNode;
+  protected child?;
 
   constructor(childNode?: BaseNode) {
     this.child = childNode;
